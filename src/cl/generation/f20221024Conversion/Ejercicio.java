@@ -24,7 +24,7 @@ public class Ejercicio {
 		System.out.println((numero6).floatValue());
 		System.out.println((numero6).longValue());*/
 		
-		// cambio de Int 
+		// cambio Int 
 		
 		Integer numero1 = 32524364;
 		
@@ -32,10 +32,16 @@ public class Ejercicio {
 		Double integerToDouble = Double.valueOf(numero1);
 		Float integerToFloat = Float.valueOf(numero1);
 		
+		// Cambio de Long
 		
+		Long numero2 = (long)124; 
+		
+		/*Integer longToInteger = Integer.valueOf(numero2);*/
+		
+		
+	}
 		
 		//Long intafloat = Long.parseLong(numero1+ ""); // EVITAR	
 		
 	
 	}
-}
