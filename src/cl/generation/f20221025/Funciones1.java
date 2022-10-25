@@ -1,5 +1,7 @@
 package cl.generation.f20221025;
 
+import java.util.Arrays;
+
 public class Funciones1 {
 
 	public static void main(String[] args) {
@@ -10,10 +12,14 @@ public class Funciones1 {
 		metodo2("McKenzie");
 		metodo3 (5);
 		metodo4 (1 , 9.5f);
-		String[] vocales = {"a","e","i","o","u"};
-		metodo5 (vocales);
+		String[] arreglito = {"a","e","i","o","u"};
+		metodo5 (arreglito);
+		//métodos con llamados
 		
-		
+		Integer valorRetornado = retorno1();
+		System.out.println(valorRetornado);
+		System.out.println(valorRetornado/7); //35/7=5
+		System.out.println(valorRetornado/5); //35/5=7
 
 	}
 	//definición o  estructura de un método
@@ -37,8 +43,19 @@ public class Funciones1 {
 	
 	
 	public static void metodo5(String [] arreglito) {//no reconoce el arreglo por sí solo
-		System.out.println("Soy el arreglo " +arreglito);
+		System.out.println("Soy el arreglo " + Arrays.toString(arreglito));
 	}
+	
+	//funciones con retorno
+	
+	public static Integer retorno1() {
+		Integer totalAlumnos = 35;
+		return totalAlumnos; //pasar el contenido de la variable
+		
+	}
+	
+	
+	
 }
 	
 
