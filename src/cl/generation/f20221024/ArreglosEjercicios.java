@@ -54,12 +54,7 @@ public class ArreglosEjercicios {
 		{
 			sumanuma = sumanuma + numa10[i];
 		}
-		
-		System.out.println(sumanuma);
-		
-		
-		
-		
+		System.out.println(sumanuma/10);	
 		
 	}
 }
