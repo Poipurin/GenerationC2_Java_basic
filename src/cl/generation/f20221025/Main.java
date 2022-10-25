@@ -35,21 +35,34 @@ public class Main {
 		
 		Squirr3l.add("Bárbara"); //añadir
 		
-		//6.- recorrerel arraylist
+		//6.- recorrer el arraylist
 		
 		for(int i = 0; i<Squirr3l.size();i++){
 			System.out.println("relator: "+ Squirr3l.get(i));
 		}
 		
+		while (int i = 0; i<Squirr3l.size();i++){
+			System.out.println("relator: "+ Squirr3l.get(i));
+		}
+		
 		
 		System.out.println("********");
-		//For iterador o for de objeto
+		//For iterador o for de objeto, foreach
 		
 		for(String relator:Squirr3l) {
 			System.out.println(relator);
 		}
-
 		
+		
+		ArrayList <Integer> numeros = new ArrayList <Integer>();
+		numeros.add(2);
+		numeros.add(3);
+		numeros.add(4);
+		numeros.add(5);
+		
+		for (Integer numero : numeros) {
+			System.out.println(numero);
+		}
 		
 		
 		
