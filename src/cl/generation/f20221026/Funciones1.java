@@ -1,4 +1,4 @@
-package cl.generation.f20221025;
+package cl.generation.f20221026;
 
 import java.util.Arrays;
 
@@ -16,11 +16,13 @@ public class Funciones1 {
 		metodo5 (arreglito);
 		//métodos con llamados
 		
-		Integer valorRetornado = retorno1();
-		System.out.println(valorRetornado);
+		Integer valorRetornado = retorno1();//no hace nada con el valor retornado
+		System.out.println(valorRetornado);//Imprime el valor
 		System.out.println(valorRetornado/7); //35/7=5
 		System.out.println(valorRetornado/5); //35/5=7
-
+		
+		String nombreCompleto = getNombreCompleto("Bárbara", "Pino", "Rojo");
+		System.out.println("El nombre completo es: "+nombreCompleto);
 	}
 	//definición o  estructura de un método
 	//void -> el método no retorna ningún valor
@@ -53,8 +55,17 @@ public class Funciones1 {
 		return totalAlumnos; //pasar el contenido de la variable
 		
 	}
-	
-	
+	/**
+	 * Método que une todos los datos
+	 * @param nombre
+	 * @param apePaterno
+	 * @param apeMaterno
+	 * @return nombreCompleto
+	 */
+	public static String getNombreCompleto(String nombre, String apePaterno, String apeMaterno) {
+			String nombreCompleto = nombre+ " "+apePaterno+" "+apeMaterno;
+			return nombreCompleto; //retornamos el contenido de la variable
+	}
 	
 }
 	
