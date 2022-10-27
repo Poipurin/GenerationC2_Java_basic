@@ -15,6 +15,7 @@ public class Funciones1 {
 		String[] arreglito = {"a","e","i","o","u"};
 		metodo5 (arreglito);
 		//métodos con llamados
+		llamadaAOtroMetodo();
 		
 		Integer valorRetornado = retorno1();//no hace nada con el valor retornado
 		System.out.println(valorRetornado);//Imprime el valor
@@ -65,6 +66,13 @@ public class Funciones1 {
 	public static String getNombreCompleto(String nombre, String apePaterno, String apeMaterno) {
 			String nombreCompleto = nombre+ " "+apePaterno+" "+apeMaterno;
 			return nombreCompleto; //retornamos el contenido de la variable
+	}
+	
+	//método que llama a otro método
+	
+	public static void llamadaAOtroMetodo() {
+		System.out.println("llamada a otro método desde un método");
+		metodo4(1234, 54.3f);
 	}
 	
 }
