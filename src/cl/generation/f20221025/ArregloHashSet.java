@@ -30,9 +30,18 @@ public class ArregloHashSet {
 		//5.- Tamaño del arreglo
 		System.out.println("tamaño del hashset: " + Squirr3l.size());
 		
+		//6.- Recorrer el arreglo
+		//foreach, de objeto o iterador
+		System.out.println("**************");
+		for (String relatores : Squirr3l) {
+			System.out.println(relatores);
+		}
 		
-		
-		
+		//for
+		System.out.println("**************");
+		for (int i = 0; i < Squirr3l.size(); i++) {
+			System.out.println("relator: " + Squirr3l.contains("Fátima"));//boolean
+		}
 	}
 
 }
