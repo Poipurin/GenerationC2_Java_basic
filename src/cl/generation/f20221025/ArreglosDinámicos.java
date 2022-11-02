@@ -48,7 +48,10 @@ public class ArreglosDinámicos {
 		for (String relator : Squirr3l) {
 			System.out.println(relator);
 		}
-
+		
+		
+		// ArrayList tipo dato Integer
+		System.out.println("********");
 		ArrayList<Integer> numeros = new ArrayList<Integer>();
 		numeros.add(2);
 		numeros.add(3);
