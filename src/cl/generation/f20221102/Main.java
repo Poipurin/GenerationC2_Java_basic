@@ -43,7 +43,14 @@ public class Main {
 			System.out.println(basquetbolista.toString());
 		}
 		
+		//instancia de clase nieta
+		Ayudante ayudante = new Ayudante();
+		ayudante.metodoImprimir();
+		
 	}
-	//
+	
+
+
+
 
 }

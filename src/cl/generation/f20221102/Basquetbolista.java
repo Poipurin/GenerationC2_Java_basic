@@ -31,6 +31,9 @@ public class Basquetbolista extends EquipoBasquetball{
 	}
 	
 	
-	
+	@Override
+	public void metodoImprimir() {
+		System.out.println("estoy en el metodo de la clase hija basquebolista");
+	}
 	
 }

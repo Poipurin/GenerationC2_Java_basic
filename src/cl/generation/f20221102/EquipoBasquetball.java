@@ -40,6 +40,9 @@ public class EquipoBasquetball {
 	}
 	
 
-	
+	//creando en metodo
+		public void metodoImprimir() {
+			System.out.println("estoy en el metodo de la super clase");
+		}
 	
 }

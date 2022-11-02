@@ -34,12 +34,17 @@ public class Entrenador extends EquipoBasquetball {
 	public void setEquipo(String equipo) {
 		this.equipo = equipo;
 	}
+	
 	@Override
 	public String toString() {
-		return "Entrenador [aniosExperiencia=" + aniosExperiencia + ", equipo=" + equipo + ", getNombre()="
-				+ getNombre() + ", getApellido()=" + getApellido() + ", getEdad()=" + getEdad() + "]";
+		return "Entrenador [aniosExperiencia=" + aniosExperiencia + ", equipo=" + equipo + ", Nombre="
+				+ getNombre() + ", ApelLido=" + getApellido() + ", Edad=" + getEdad() + "]";
 	}
-	
+
+	/*@Override
+	public void metodoImprimir() {
+		System.out.println("estoy en el metodo de la clase hija entrenador");
+	}*/
 	
 
 }
