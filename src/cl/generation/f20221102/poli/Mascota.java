@@ -54,6 +54,16 @@ public class Mascota {
 	
 	//polimosrfismo paramétrico
 	//Sobrecarga del método
-	
+	public void horasSiesta() {
+		System.out.println("La mascota no duerme");
+	}
+
+	public void horasSiesta(int horas) {
+		System.out.println("La mascota duerme "+horas+" horas");
+	}
+
+	public void horasSiesta(float horas) {
+		System.out.println("La mascota duerme "+horas+" horas");
+	}
 	
 }

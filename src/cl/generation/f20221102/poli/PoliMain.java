@@ -26,8 +26,13 @@ public class PoliMain {
 		System.out.println(profesorMcKenzie.toString());
 		
 		
-		Mascota SrButtons = new Gato();
-		SrButtons.emitirSonido();
+		Mascota srButtons = new Gato();
+		srButtons.emitirSonido();
+		
+		
+		//polimorfismo paramétrico, el método se escirbe igual pero recibe distintos parámetos.
+		
+				srButtons.horasSiesta(16.5f);
 		
 	}
 
