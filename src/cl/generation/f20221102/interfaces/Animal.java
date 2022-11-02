@@ -37,7 +37,8 @@ public abstract class Animal {
 	}
 	
 	/*public abstract void metodoEnAnimal() {
-		System.out.println("Estoy en el método de animal"); //implementación del método, accionar*/
+		System.out.println("Estoy en el método de animal"); 
+		implementación del método, accionar dentro*/
 		
 	public abstract void metodoEnAnimal();
 	//definición del método	
