@@ -1,6 +1,6 @@
 package cl.generation.f20221102;
 
-public class Basquetbolista {
+public class Basquetbolista extends EquipoBasquetball{
 	private Float altura;
 	private Float peso;
 	public Basquetbolista() {
@@ -23,6 +23,14 @@ public class Basquetbolista {
 	public void setPeso(Float peso) {
 		this.peso = peso;
 	}
+	@Override
+	public String toString() {
+		return "Basquetbolista [altura=" + altura + ", peso=" + peso + ", getNombre()=" + getNombre()
+				+ ", getApellido()=" + getApellido() + ", getEdad()=" + getEdad() + ", toString()=" + super.toString()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+	}
+	
+	
 	
 	
 }

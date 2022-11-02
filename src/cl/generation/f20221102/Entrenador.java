@@ -11,6 +11,17 @@ public class Entrenador extends EquipoBasquetball {
 		this.aniosExperiencia = aniosExperiencia;
 		this.equipo = equipo;
 	}
+	
+	public Entrenador(String nombre, String apellido, int edad, int aniosExperiencia, String equipo) {
+		super(nombre, apellido, edad);
+		this.aniosExperiencia = aniosExperiencia;
+		this.equipo = equipo;
+	}
+	
+	public Entrenador(String nombre, String apellido, int edad) {
+		super(nombre, apellido, edad);//pasando valores al constructor de la super clase
+		
+	}
 	public int getAniosExperiencia() {
 		return aniosExperiencia;
 	}
@@ -22,6 +33,11 @@ public class Entrenador extends EquipoBasquetball {
 	}
 	public void setEquipo(String equipo) {
 		this.equipo = equipo;
+	}
+	@Override
+	public String toString() {
+		return "Entrenador [aniosExperiencia=" + aniosExperiencia + ", equipo=" + equipo + ", getNombre()="
+				+ getNombre() + ", getApellido()=" + getApellido() + ", getEdad()=" + getEdad() + "]";
 	}
 	
 	

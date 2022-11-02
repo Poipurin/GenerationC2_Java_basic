@@ -57,7 +57,7 @@ public class areasYPerímetros {
 			System.out.println("Seleccione una opción");
 			opciones = sc.nextInt();
 			if (opciones == 0) {
-				System.out.println("Usted ha salido del programa");
+				System.out.println("Has salido del programa");
 				break;
 			}
 			if (contadorErrores == 1 && opciones > 3) {

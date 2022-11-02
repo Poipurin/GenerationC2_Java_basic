@@ -6,7 +6,7 @@ public class Main {
 		//las variables
 		
 		//variables primitivas, caacater estático
-		int numero1 = 2; //variable numerica -2 elevado a 31 y +2 elevado 31-1
+		/*int numero1 = 2; //variable numerica -2 elevado a 31 y +2 elevado 31-1
 		float decimal=  2.5f; // 32 bits 
 		float decimal2= (float) 2.5; //castear (transformar)
 		
@@ -30,7 +30,7 @@ public class Main {
 		Integer numero3= 2; //variable numerica -2 elevado a 31 y +2 elevado 31-1
 		
 		//conversión a otro datos
-		
+		*/
 
 	}
 

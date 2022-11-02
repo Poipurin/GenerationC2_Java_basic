@@ -37,14 +37,14 @@ public class Menu {
 		
 		//System.out.println("fuera del while " + opciones); //referencial para los programines
 		
-		if(opciones ==0| |) {
+		if(opciones ==0) {
 			System.out.println("Adios!!");
 		}else {
 			System.out.println("fuera del while " + opciones);
 		}
 		
 		
-		
+		sc.close();
 		// Calculadora con 4 operaciones básicas
 		// solicitar y capturar 2 números float
 		// imprimir resultados y guardar en una variable

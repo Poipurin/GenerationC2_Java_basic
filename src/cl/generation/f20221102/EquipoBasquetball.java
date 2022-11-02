@@ -31,11 +31,15 @@ public class EquipoBasquetball {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
+	
+	
+	
 	@Override
 	public String toString() {
 		return "EquipoBasquetball [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + "]";
 	}
 	
+
 	
 	
 }

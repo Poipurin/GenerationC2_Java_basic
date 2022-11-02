@@ -3,7 +3,7 @@ package cl.generation.f20221025;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class iteretor {
+public class iterator {
 
 	public static void main(String[] args) {
 		

@@ -1,6 +1,6 @@
 package cl.generation.f20221102;
 
-public class Kinesiológo {
+public class Kinesiológo extends EquipoBasquetball{
 	
 	private String titulo;
 	private String especialidad;
@@ -23,6 +23,12 @@ public class Kinesiológo {
 	}
 	public void setEspecialidad(String especialidad) {
 		this.especialidad = especialidad;
+	}
+	@Override
+	public String toString() {
+		return "Kinesiológo [titulo=" + titulo + ", especialidad=" + especialidad + ", getNombre()=" + getNombre()
+				+ ", getApellido()=" + getApellido() + ", getEdad()=" + getEdad() + ", toString()=" + super.toString()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
 	}
 	
 	
