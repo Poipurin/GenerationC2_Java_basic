@@ -52,5 +52,8 @@ public class Mascota {
 		System.out.println("El sonido es... ");
 	}
 	
+	//polimosrfismo paramétrico
+	//Sobrecarga del método
+	
 	
 }
