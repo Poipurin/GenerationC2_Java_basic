@@ -5,25 +5,25 @@ import java.util.HashSet;
 public class ArregloHashSet {
 
 	public static void main(String[] args) {
-		//1.- definición set o HashSet
+		//1.- Definición set o HashSet
 		//HashSet<TIPODATO> nombre_array = new HashSet<TIPODATO>();
 		HashSet<String> Squirr3l = new HashSet<String>();
 		
 		
-		//2.- agregar elemento al arreglo
+		//2.- Agregar elemento al arreglo
 		Squirr3l.add("Bárbara");
 		Squirr3l.add("Brisa");
 		Squirr3l.add("Fátima");
 		Squirr3l.add("Gerald");
 		Squirr3l.add("Sebastián");
 		Squirr3l.add("Bárbara");
-		System.out.println(Squirr3l); //no permite dato duplicado y lo coloca de foma aleatorea
+		System.out.println(Squirr3l); //no permite un dato duplicado y lo coloca de foma aleatorea en el arreglo
 		
 		//3.-Verificar el contenido del arreglo
 		boolean verificacionNombre = Squirr3l.contains("Brisa");//busca por la palabra clave
 		System.out.println("Existe el relator? " +verificacionNombre);
 		
-		//4.- eliminar un elemento por objeto o contenido
+		//4.- Eliminar un elemento por objeto o contenido
 		Squirr3l.remove("Bárbara"); //elimino por el elemento, sensible a mayus y minus
 		System.out.println(Squirr3l);
 		
