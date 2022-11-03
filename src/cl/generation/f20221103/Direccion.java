@@ -18,7 +18,7 @@ public class Direccion {
 	
 	public Direccion() {
 		super();
-		
+			
 	}
 
 	public String getCalle() {

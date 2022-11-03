@@ -11,17 +11,18 @@ public class Usuario {
 	
 	private ArrayList<String> telefonos;
 	//atributo de colaboración
-	private Direccion direccion;
+	private ArrayList <Direccion> direccion;
 	
 	
 	public Usuario() {
 		super();
 		this.telefonos = new ArrayList<String>(); //inicializando un arreglo
+		this.direccion = new ArrayList<Direccion>();
 	}
 
 
 	public Usuario(String nombre, String correo, String password, String apellido, String nick,
-			ArrayList<String> telefonos, Direccion direccion) {
+			ArrayList<String> telefonos, ArrayList<Direccion> direccion) {
 		super();
 		this.nombre = nombre;
 		this.correo = correo;
@@ -93,12 +94,12 @@ public class Usuario {
 	}
 
 
-	public Direccion getDireccion() {
+	public ArrayList<Direccion> getDireccion() {
 		return direccion;
 	}
 
 
-	public void setDireccion(Direccion direccion) {
+	public void setDireccion(ArrayList<Direccion> direccion) {
 		this.direccion = direccion;
 	}
 

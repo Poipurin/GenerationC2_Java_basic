@@ -19,12 +19,14 @@ public class Main {
 		usuario.getTelefonos().add ("823217");
 		System.out.println(usuario.getTelefonos());
 		
-		Direccion direccion = new Direccion();
+		/*Direccion direccion = new Direccion();
 		direccion.setCalle("Pio");
 		direccion.setNumero("235432");
 		direccion.setRegion("Juads");
 		
-		usuario.setDireccion(direccion);
+		usuario.setDireccion(direccion);*/
+		//forma limpia
+		usuario.getDireccion();
 		System.out.println(usuario.getDireccion().toString());
 	}
 
