@@ -82,7 +82,7 @@ public class DatosEstudiante {
 				estudiante.setEdad(edad);
 				estudiante.setCorreo(correo);
 				estudiante.setRut(rut);
-				//estudiante.setCurso(curso);
+				estudiante.setCurso(curso);
 				estudiante.setTelefono(telefono);
 				estudiantes.add(estudiante);
 				

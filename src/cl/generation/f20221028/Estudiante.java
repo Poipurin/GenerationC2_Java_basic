@@ -7,6 +7,7 @@ public class Estudiante {
 	private String apellido;
 	private Integer edad;
 	private String rut;
+	private String curso;
 	private Integer telefono; 
 	private String correo;
 	
@@ -76,6 +77,16 @@ public class Estudiante {
 
 	public void setRut(String rut) {
 		this.rut = rut;
+	}
+	
+	public String getCurso() {
+		return curso;
+	}
+
+
+
+	public void setCurso(String curso) {
+		this.rut = curso;
 	}
 
 
