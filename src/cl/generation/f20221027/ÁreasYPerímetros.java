@@ -8,45 +8,6 @@ public class ÁreasYPerímetros {
 		menu();
 	}
 
-	public static void circunferencia() {
-		Scanner scannerCircunferencia = new Scanner(System.in);
-		System.out.println("Ingresa el diámetro");
-		double diametroCircunferencia = scannerCircunferencia.nextFloat();
-		double perimetroCircunferencia = diametroCircunferencia * Math.PI;
-		System.out.println("El perímetro de la circunferencia es: " + perimetroCircunferencia);
-		double areaCircunferencia = (diametroCircunferencia / 2) * (diametroCircunferencia / 2) * Math.PI;
-		System.out.println("El áreade la circunferencia es: " + areaCircunferencia);
-		scannerCircunferencia.close();
-	}
-
-	public static void rectangulo() {
-		// cálculo del perímetro y área
-		Scanner scannerRectangulo = new Scanner(System.in);
-		System.out.println("Ingrese el ancho");
-		float anchoRectangulo = scannerRectangulo.nextFloat();
-		System.out.println("Ingrese la altura");
-		float largoRectangulo = scannerRectangulo.nextFloat();
-		float perimetroRectangulo = (anchoRectangulo + largoRectangulo) * 2;
-		System.out.println("El perímetro del rectángulo es " + perimetroRectangulo);
-		float areaRectangulo = anchoRectangulo * largoRectangulo;
-		System.out.println("El área del rectángulo es " + areaRectangulo);
-		scannerRectangulo.close();
-	}
-
-	public static void triangulo() {
-		Scanner scannerTriangulo = new Scanner(System.in);
-		System.out.println("Ingresa la base");
-		double baseTriangulo = scannerTriangulo.nextDouble();
-		System.out.println("Ingresa la altura");
-		double alturaTriangulo = scannerTriangulo.nextDouble();
-		double resultado_perimetro = baseTriangulo + alturaTriangulo
-				+ (Math.sqrt((alturaTriangulo * alturaTriangulo) + ((baseTriangulo / 2) * (baseTriangulo / 2))) * 2);
-		System.out.println(("El perímetro del triángulo es: " + resultado_perimetro));
-		double resultado_area = (baseTriangulo * alturaTriangulo) / 2;
-		System.out.println(("El área del triángulo es: " + resultado_area));
-		scannerTriangulo.close();
-	}
-
 	public static void menu() {
 		System.out.println("*****************************");
 		System.out.println("*     Áreas y Perímetros    *");
@@ -91,6 +52,45 @@ public class ÁreasYPerímetros {
 			break;
 		}
 		sc.close();
+	}
+
+	public static void circunferencia() {
+		Scanner scannerCircunferencia = new Scanner(System.in);
+		System.out.println("Ingresa el diámetro");
+		double diametroCircunferencia = scannerCircunferencia.nextFloat();
+		double perimetroCircunferencia = diametroCircunferencia * Math.PI;
+		System.out.println("El perímetro de la circunferencia es: " + perimetroCircunferencia);
+		double areaCircunferencia = (diametroCircunferencia / 2) * (diametroCircunferencia / 2) * Math.PI;
+		System.out.println("El áreade la circunferencia es: " + areaCircunferencia);
+		scannerCircunferencia.close();
+	}
+
+	public static void rectangulo() {
+		// cálculo del perímetro y área
+		Scanner scannerRectangulo = new Scanner(System.in);
+		System.out.println("Ingrese el ancho");
+		float anchoRectangulo = scannerRectangulo.nextFloat();
+		System.out.println("Ingrese la altura");
+		float largoRectangulo = scannerRectangulo.nextFloat();
+		float perimetroRectangulo = (anchoRectangulo + largoRectangulo) * 2;
+		System.out.println("El perímetro del rectángulo es " + perimetroRectangulo);
+		float areaRectangulo = anchoRectangulo * largoRectangulo;
+		System.out.println("El área del rectángulo es " + areaRectangulo);
+		scannerRectangulo.close();
+	}
+
+	public static void triangulo() {
+		Scanner scannerTriangulo = new Scanner(System.in);
+		System.out.println("Ingresa la base");
+		double baseTriangulo = scannerTriangulo.nextDouble();
+		System.out.println("Ingresa la altura");
+		double alturaTriangulo = scannerTriangulo.nextDouble();
+		double resultado_perimetro = baseTriangulo + alturaTriangulo
+				+ (Math.sqrt((alturaTriangulo * alturaTriangulo) + ((baseTriangulo / 2) * (baseTriangulo / 2))) * 2);
+		System.out.println(("El perímetro del triángulo es: " + resultado_perimetro));
+		double resultado_area = (baseTriangulo * alturaTriangulo) / 2;
+		System.out.println(("El área del triángulo es: " + resultado_area));
+		scannerTriangulo.close();
 	}
 
 }
