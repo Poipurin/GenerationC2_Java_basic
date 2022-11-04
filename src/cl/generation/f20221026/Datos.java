@@ -32,7 +32,7 @@ public class Datos {
 			edad = scanner.nextInt(); // scaneamos una variable de tipo int ya que lo asociamos a la variable que está
 										// fuera del dowhile.
 
-		} while (edad < 18 || edad > 120); // mientras la condición sea verdadera, el ciclo se repetirá infinitas veces.
+		} while (edad < 18 || edad > 120); // Mientras la condición sea verdadera, el ciclo se repetirá infinitas veces.
 
 		//
 		do {
