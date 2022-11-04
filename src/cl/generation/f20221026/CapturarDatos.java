@@ -36,10 +36,6 @@ public class CapturarDatos {
 	}
 
 	public static void nivelIMC(Float IMC) {
-		/*
-		 * Por debajo de 18.5 Bajo peso 18.5 - 24.9 Normal 25.0 - 29.9 Sobrepeso 30.0 o
-		 * más Obeso
-		 */
 
 		if (IMC < 18.5f) {
 			System.out.println("Su IMC está por debajo de lo normal");
