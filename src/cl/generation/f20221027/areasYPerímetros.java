@@ -2,10 +2,11 @@ package cl.generation.f20221027;
 
 import java.util.Scanner;
 
-public class areasYPerímetros {
+public class AreasYPerímetros {
 	public static void main(String[] args) {
 		menu();
 	}
+
 	public static void rectangulo() {
 		// calculo del perimetro
 		Scanner scannerRectangulo = new Scanner(System.in);
@@ -19,6 +20,7 @@ public class areasYPerímetros {
 		System.out.println("El área del rectángulo es " + areaRectangulo);
 		scannerRectangulo.close();
 	}
+
 	public static void triangulo() {
 		Scanner scannerTriangulo = new Scanner(System.in);
 		System.out.println("Ingresa la base");
@@ -32,6 +34,7 @@ public class areasYPerímetros {
 		System.out.println(("El area es " + resultado_area));
 		scannerTriangulo.close();
 	}
+
 	public static void circunferencia() {
 		Scanner scannerCircunferencia = new Scanner(System.in);
 		System.out.println("Ingresa el diametro ");
@@ -42,6 +45,7 @@ public class areasYPerímetros {
 		System.out.println("El área es" + areaCircunferencia);
 		scannerCircunferencia.close();
 	}
+
 	public static void menu() {
 		System.out.println("*****************************");
 		System.out.println("*     Áreas y Perímetros    *");
@@ -68,16 +72,16 @@ public class areasYPerímetros {
 				System.out.println("Te quedan " + contadorErrores + " intentos");
 			}
 		} while (opciones < 0 || opciones > 3);
-		
+
 		switch (opciones) {
 		case 1:
 			circunferencia();
 			break;
-			
+
 		case 2:
 			rectangulo();
 			break;
-			
+
 		case 3:
 			triangulo();
 			break;
