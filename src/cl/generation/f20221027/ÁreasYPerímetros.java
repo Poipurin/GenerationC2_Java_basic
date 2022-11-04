@@ -2,12 +2,12 @@ package cl.generation.f20221027;
 
 import java.util.Scanner;
 
-public class AreasYPerímetros {
+public class ÁreasYPerímetros {
+
 	public static void main(String[] args) {
 		menu();
 	}
-	
-	
+
 	public static void circunferencia() {
 		Scanner scannerCircunferencia = new Scanner(System.in);
 		System.out.println("Ingresa el diámetro");
@@ -46,8 +46,6 @@ public class AreasYPerímetros {
 		System.out.println(("El área del triángulo es: " + resultado_area));
 		scannerTriangulo.close();
 	}
-
-	
 
 	public static void menu() {
 		System.out.println("*****************************");
@@ -94,4 +92,5 @@ public class AreasYPerímetros {
 		}
 		sc.close();
 	}
+
 }
