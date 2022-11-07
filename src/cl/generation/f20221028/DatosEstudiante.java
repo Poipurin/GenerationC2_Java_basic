@@ -6,126 +6,113 @@ import java.util.Scanner;
 public class DatosEstudiante {
 
 	public static void main(String[] args) {
-		//llamar menu
-		menu();
-		//opciones y contador de errores
-		int opciones = 0;
-		int contadorErrores = 3;
-		
-		//arreglo de estudiantes
-		ArrayList<Estudiante> estudiantes = new ArrayList<Estudiante>();
-		
-		//inicio scanner
-		  Scanner scanner = new Scanner(System.in);
-		  
-		//ingresar opciones erroneas
-		do
-		{
-			System.out.println("Seleccione una opcion");
-			opciones = scanner.nextInt();
-			
-			//si la opcion es dos, salir del do-while
-			if(opciones == 2)
-			{
-				System.out.println("Usted ha salido del programa");
-				break;
-			}
-			
-			if(contadorErrores == 1 && opciones > 2)
-			{
-				System.out.println("Agoto la cantidad de intentos");
-				break;
-			}
-			else if(opciones < 1 || opciones > 2)
-			{
-				contadorErrores--;
-				System.out.println("Te quedan " + contadorErrores + " intentos");
-			}
-		}
-		while(opciones < 1 || opciones > 2);
-		
-		//salir del menu
-		if(opciones == 2 || contadorErrores < 1)
-		{
-			System.out.println("Adios");
-		}
-		
-		//ingreso de opciones
-		else
-	    {
-	      do
-	      {
-	    	
-	        switch(opciones)
-	      {
-	        case 1:
-	        	//instancia al objeto estudiante
-				Estudiante estudiante = new Estudiante();
-				
-				System.out.println("Ingrese nombre");
-				String nombre = scanner.next(); //lee toda la linea
-				System.out.println("Ingrese apellido");
-				String apellido = scanner.next();
-				System.out.println("Ingrese edad");
-				Integer edad = scanner.nextInt();
-				System.out.println("Ingrese correo");
-				String correo = scanner.next();
-				System.out.println("Ingrese rut");
-				String rut = scanner.next();
-				System.out.println("Ingrese curso");
-				String curso = scanner.next();
-				System.out.println("Ingrese telefono");
-				Integer telefono = scanner.nextInt();
-				
-				estudiante.setNombre(nombre);
-				estudiante.setApellido(apellido);
-				estudiante.setEdad(edad);
-				estudiante.setCorreo(correo);
-				estudiante.setRut(rut);
-				estudiante.setCurso(curso);
-				estudiante.setTelefono(telefono);
-				estudiantes.add(estudiante);
-				
-	          break;
-	        default:
-				System.out.println("opcion no valida");
-	          
-	      }
-	        System.out.println("Seleccione una opcion");
-				opciones = scanner.nextInt();
-	      }
-	      while(opciones == 1);  for(Estudiante estudiante : estudiantes)
-	      {
-	    	  System.out.println("Nombre: "+estudiante.getNombre());
-	    	  System.out.println("Apellido: "+estudiante.getApellido());
-	    	  System.out.println("Rut: "+estudiante.getRut());
-	    	  System.out.println("Edad: "+estudiante.getEdad());
-	    	  System.out.println("Correo: "+estudiante.getCorreo());
-	    	  System.out.println("Telefono: "+estudiante.getTelefono());
-	    	  System.out.println();
-	      }
-	      
-	      //obtener un estudiante especifico
-	      estudiantes.get(0);
-	      
-	      
-	    }
-
-
-		//cierre scanner
-		scanner.close();
-		
+		//llamar
+		//menu();
+		listaEstudiantes();
 	
+	}
+	
+	/*public static void menu () {//llamar método desde el main
+	int opciones = 0;
+	  System.out.println("***** MENÚ *****");
+	  System.out.println("(1) Agregar estudiante"); 
+	  System.out.println("(2) Salir");
+	  Scanner scMenu = new Scanner(System.in);
+	  
+	  do {
+		  System.out.println("Seleccione una opción");
+		  opciones = scMenu.nextInt(); 			
+		  if(opciones == 2) {
+		  System.out.println("Hasta pronto");
+	  }
+		
+	} while (opciones == 1);
+	  
+	  switch (opciones) {
+	case 1: {
+		
+		listaEstudiantes();
+		break;
+	}
+	default:
+		break;
+	}
+	 
+	  scMenu.close();
+	  
+	}*/
+	
+	
+	
+	public static void listaEstudiantes() {
+		Scanner sc = new Scanner(System.in);//Inicio scanner
+		ArrayList<Estudiante> estudiantes = new ArrayList<Estudiante>(); //Inicio arreglo estudiantes
+		int continuar = 2;
+		 
+		do {
+			
+			//Pido al usuario que llene los campos de de los estudiantes
+			System.out.println("Ingrese el nombre del estudiante");
+			String nombre = sc.nextLine ();
+			System.out.println("Ingrese el apellido del estudiante");
+			String apellido = sc.nextLine ();
+			System.out.println("Ingrese la edad del estudiante");
+			Integer edad = sc.nextInt ();
+			System.out.println("Ingrese el rut del estudiante");
+			String rut = sc.nextLine ();
+			sc.nextLine();
+			System.out.println("Ingrese el curso del estudiante");
+			String curso = sc.nextLine ();
+			System.out.println("Ingrese el teléfono del estudiante");
+			Integer telefono = sc.nextInt ();
+			sc.nextLine();
+			System.out.println("Ingrese el correo del estudiante");
+			String correo = sc.nextLine ();
+			
+			//Capturo los datos de los estudiantes que ingresa el usuario
+			Estudiante estudiante = new Estudiante(); //Instancio al objeto
+			estudiante.setNombre(nombre);
+			estudiante.setApellido(apellido);
+			estudiante.setEdad(edad);
+			estudiante.setRut(rut);
+			estudiante.setCurso(curso);
+			estudiante.setTelefono(telefono);
+			estudiante.setCorreo(correo);
+			
+			estudiantes.add(estudiante); // Ingreso estudiante al arreglo
+			
+			//Pregunto al usuario se desea seguir ingresando estudiantes
+			System.out.println("¿Desea seguir ingresando estudiantes?");
+			System.out.println("(1)SI   (2)NO");
+			continuar= sc.nextInt();
+			sc.nextLine(); //corrige bug "nextInt -> nextLine"
+			
+			if (!(continuar==1)) {
+				System.out.println("Has terminado de ingresar estudiantes");
+				System.out.println();
+				break;
+			} else {
+				
+			}
+			
+		} while (continuar==1);
+		
+		//Muestro los estudiantes ingresados al usuario
+		
+		System.out.println("***********************************");
+		System.out.println();
+		for (Estudiante estudiante : estudiantes) {
+			System.out.println("Estudiante: "+ "Nombre completo: "+estudiante.getNombre() +" "+estudiante.getApellido()+" "+"Edad: "+estudiante.getEdad()+" "+"RUT: "+estudiante.getRut()+" "+"Curso: "+estudiante.getCurso()+" "+"Teléfono: "+estudiante.getTelefono()+" "+"Correo: "+estudiante.getCorreo());
+		}
+		System.out.println();
+		System.out.println("***********************************");
+		
+		//Obtener un dato específico del estudiante
+		estudiantes.get(0);//obtener estudiante por posición
+		estudiantes.get(0).getRut(); //obtener posición y dato
+		sc.close();
+		
 		
 	}
 	
-	
-	
-	public static void menu () //llamar metodo desde el main
-	{
-	  System.out.println("***** MENU *****");
-	  System.out.println("1.-Agregar estudiante"); //todos los datos de una
-	  System.out.println("2.-Salir");
-	}
-
 }
