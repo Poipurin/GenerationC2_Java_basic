@@ -66,7 +66,7 @@ public class ÁreasYPerímetros {
 	}
 
 	public static void rectangulo() {
-		// cálculo del perímetro y área
+		// Cálculo del perímetro y área
 		Scanner scannerRectangulo = new Scanner(System.in);
 		System.out.println("Ingrese el ancho");
 		float anchoRectangulo = scannerRectangulo.nextFloat();
